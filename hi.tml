@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Click Example</title>
+    <!-- Load jQuery dari CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            line-height: 100px;
+            text-align: center;
+            cursor: pointer;
+            margin: 50px auto;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div>Klik Saya</div>
+
+<script>
+    // Event handler dengan .click()
+    $("div").click(function() {
+        alert("hello dari .click()");
+    });
+
+    // // Event handler dengan .on("click")
+    // $("div").on("click", function() {
+    //     alert("hello dari .on('click')");
+    // });
+
+    // $("div").hover(
+    //     function() {
+    //         alert("hovered in");
+    //     },
+    //     function() {
+    //         alert("hovered out");
+    //     }
+    // );
+
+</script>
+
+</body>
+</html>
